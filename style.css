@@ -1,0 +1,139 @@
+body{
+   background-color:yellow;
+}
+.list{
+    display:inline-block;
+    justify-content: center;
+    margin-left: 400px;
+    /* list-style-position: inside; */
+   
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 80px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    /* border: 1px solid black; */
+    animation: box 3s infinite alternate;
+}
+@keyframes box{
+    0%{
+        transform: skew(-30deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color:darkgray;
+    /* border: 1px solid black; */
+    animation: row 3s infinite alternate;
+}
+@keyframes row{
+    0%{
+        transform: skewY(-30deg);
+    }
+    100%{
+        transform: skewY(30deg);
+    }
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    transition-duration: 4s ;
+    animation: row3 2s infinite alternate;
+    
+}
+@keyframes row3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes row4{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,0.5);
+    }
+}
+#item{
+    animation: row4 1s infinite alternate;
+}
+@keyframes item1{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,1);
+    }
+}
+#item1{
+    animation: item1 1s infinite alternate;
+    background-color: brown;
+    border:1px solid black;
+}
+@keyframes item2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(150deg);
+    }
+}
+#item2{
+    animation: item2 1s infinite alternate;
+    background-color: green;
+    border: 1px solid black;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    border: 1px solid black;
+    
+}
+
+.width{
+    width: 100px;
+    height: 100px;
+    background-color:lawngreen;
+    transition-property: width;
+    transition-timing-function: linear; 
+
+}
+.width:hover{
+    width: 300px;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color:lawngreen;
+    transition-property: width;
+    transition-timing-function: linear; 
+}
+.square:hover{
+    width: 300px;
+    height: 400px;
+}
+.trans{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    margin-left: 500px;
+}
+
